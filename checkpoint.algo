@@ -1,0 +1,47 @@
+Variables:
+    wordCount = 0
+    vowelCount = 0
+    character = empty string
+
+Read the sentence character by character until reaching the period:
+    Read a character
+    If the character is not a space and is not the period:
+        Increment the wordCount by 1
+
+        If the character is a vowel (a, e, i, o, u, A, E, I, O, U):
+            Increment the vowelCount by 1
+
+Output the wordCount and vowelCount
+
+
+
+
+---------------------
+
+
+def sum_of_distinct_elements(set1, set2):
+    distinct_elements = set()
+    
+    # Add elements from set1 to distinct_elements and sum
+    for elem in set1:
+        if elem not in distinct_elements:
+            distinct_elements.add(elem)
+            sum += elem
+    
+    # Add elements from set2 to distinct_elements and sum
+    for elem in set2:
+        if elem not in distinct_elements:
+            distinct_elements.add(elem)
+            sum += elem
+    
+    return sum
+
+# Example sets
+set1 = [3, 1, 7, 9]
+set2 = [2, 4, 1, 9, 3]
+
+result = sum_of_distinct_elements(set1, set2)
+print("Result:", result)
+
+
+
