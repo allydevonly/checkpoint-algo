@@ -1,0 +1,34 @@
+Algorithm: dot_product(v1, v2)
+Input: Two vectors v1 and v2 of the same length n
+Output: Scalar product of v1 and v2 stored in variable ps
+
+1. Initialize ps to 0
+2. For i = 1 to n do steps 3-4
+   3. Update ps += v1[i] * v2[i]
+   4. End for
+5. Return ps
+
+Algorithm: check_orthogonal_vectors(n)
+Input: Number of vector pairs n
+Output: Print whether each pair of vectors is orthogonal or not
+
+1. For i = 1 to n do steps 2-4
+   2. Read vector v1 of dimension n
+   3. Read vector v2 of dimension n
+   4. If dot_product(v1, v2) equals 0, then print "Vectors are orthogonal"
+      Else print "Vectors are not orthogonal"
+   5. End for
+
+Algorithm: insertion_sort(arr)
+Input: Array arr of n elements to be sorted
+Output: Sorted array arr
+
+1. For i = 1 to n do steps 2-6
+   2. Set key = arr[i]
+   3. Set j = i - 1
+   4. While j >= 0 and arr[j] > key do steps 5-6
+      5. Set arr[j + 1] = arr[j]
+      6. Decrement j
+   7. Set arr[j + 1] = key
+   8. End for
+9. Return sorted array arr
